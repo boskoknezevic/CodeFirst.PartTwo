@@ -16,11 +16,11 @@ namespace CodeFirst.PartTwo.Models
         public string Type { get; set; }
 
         [ForeignKey("Car")]
-        public int CarId { get; set; }
+        public int? CarId { get; set; }
         public Car Car { get; set; }
 
         [ForeignKey("EngineType")]
-        public int EngineTypeId { get; set; }
+        public int? EngineTypeId { get; set; }
         public EngineType EngineType { get; set; }
     }
 }
